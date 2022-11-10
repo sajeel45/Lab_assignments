@@ -1,53 +1,98 @@
 *{
-    margin: 0;
-}
-.container{
-    width: 100%;
-}
-#horizontal-navbar{
-    background-color: rgba(3, 146, 3, 0.862);
-    padding-top: 14px;
-}
-#horizontal-navbar ul{
-    list-style: none;
-}
-#horizontal-navbar ul li{
-    float: left;
-    margin-left: 0px;
-    margin-right: 3px;
-    width: 15%;
-    
-}
-#horizontal-navbar ul li:hover{
-    color: aliceblue;
-}
-a:hover{
-    color: aliceblue;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#horizontal-navbar li a{
-    float: left;
+.container{
+    display: flex;
+    justify-content: center;
 }
-#horizontal-navbar ul li a{
-    text-decoration: none;
-    color: black;
-    width: 100%;
-}
-#img{
-    width: 90px;
-}
-#heading{
-    text-align: center;
-    text-transform:uppercase;
-    color: lightgreen;
-}
-.vertical-navbar ul{
+
+li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     list-style: none;
 }
-.vertical-navbar ul li a{
+
+nav>ul{
+    margin-bottom: 0px;
+    background-color: #70ad46;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    font-size: large;
     text-decoration: none;
-    display: block;
+}
+
+ul li:first-child{
+    background-color: #c5e0b3;
+}
+
+ul li:first-child a{
+    background-color: #c5e0b3;
     color: black;
-    background-color: 89e4a2;
-    width: 30%;
+}
+
+img{
+    height: 400px;
+    width: 1040px;
+}
+
+h2{
+    text-align: center;
+    color: #70ad46;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navv{
+    margin-bottom: 0px;
+    background-color: #c5e0b3;
+    width: 60%;
+}
+
+.navv > ul li a{
+    margin-top: 0px;
+    color: black;
+}
+
+.navv > ul li{
+    border-bottom: 1px solid #70ad46;
+}
+
+.section{
+    margin-left: 240px;
+    display: flex;
+}
+
+.content > p{
+    margin-top: 0px;
+    text-align: start;
+    padding-top: 0px;
+    padding-left: 15px;
+    width: 74%;
+    font-weight: bold;
+    color: black;
+}
+
+.navv>ul{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.navv ul li:first-child a{
+    background-color: #70ad46;
+    color:whitesmoke;
+}
+
+.navv ul li:first-child{
+    background-color: #70ad46;
+    text-align: center;
 }

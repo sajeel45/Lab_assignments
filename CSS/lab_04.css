@@ -21,42 +21,79 @@ h1{
 .parent-div{
     width: 100%;
     float: left;
-    
 }
-#main-content img{
+.parent-div img{
     width: 20%;
 }
+
 p{
     text-align: center;
 }
 h2{
     margin-top: 100px;
 }
+.effects{
+    filter:blur(5px);
+    filter: grayscale(100%);
+    /* opacity: 50%; */
+}
+.image-effects img{
+    width: 33%;
+}
+.image-effects .greyscale{
+    filter: grayscale(100);
+}
+.image-effects .blur{
+    filter: blur(4px);
+}
+.image-effects .opacity{
+    opacity: 50%;
+}
+.text-effects{
+    margin-top: 50px;
+    font-weight: 600;
+    width: 25%;
+    border: 1px solid black;
+    float: left;
+    margin-left: 10px;
+}
+.heading{
+    text-shadow: 5px 5px 10px blue;
+}
+.text-effects .image{
+    width: 100%;
+    filter: drop-shadow(4px);
+    box-shadow: 0px 0px 20px black;
+}
+@keyframes rightmove{
+    0%   {position: relative;}
+  100% {width: 300px; height: 300px; transform: rotate(180deg);}
+  
+}
+    
 .square{
-    width: 100px;
-    height: 100px;
+    height: 150px;
+    width: 150px;
     background-color: red;
+    animation-name: rightmove;
+    animation-duration: 2s;
+    transition: 1s;
+    animation-direction: normal
 }
-.square:hover{
-    rotate: 180deg;
-    transform:scale(3,3);
-    translate: 3em;
-
-}
-@media screen and (max-width: 480px) {
-    #main-content img{
+@media screen and (max-width: 300px) {
+    .parent-div img{
         width: 100%;
     }
 }
 
-@media screen and (max-width: 720px) and (min-width: 481px) {
-    #main-content img{
-        width: 40%;
+@media screen and (max-width: 800px) and (min-width: 301px) {
+    .parent-div img{
+    width: 40%;
     }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 721px) {
-    #main-content img{
-        width: 30%;
+@media screen and (max-width: 1024px) and (min-width: 801px) {
+    .parent-div img{
+        width: 20%;
     }
 }
