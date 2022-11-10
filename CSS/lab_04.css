@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+}
+h1{
+    margin: bottom 100px; ;
+}
+.text{
+    border: 1px solid black;
+    width: 20%;
+    background-color: yellow;
+    animation: mymove 5s infinite;
+}
+.text:hover{
+    transform: rotate(180deg);
+}
+/* @keyframes mymove {
+    50% {
+        transform:rotate(180deg);
+    }
+} */
+.parent-div{
+    width: 100%;
+    float: left;
+    
+}
+#main-content img{
+    width: 20%;
+}
+p{
+    text-align: center;
+}
+h2{
+    margin-top: 100px;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.square:hover{
+    rotate: 180deg;
+    transform:scale(3,3);
+    translate: 3em;
+
+}
+@media screen and (max-width: 480px) {
+    #main-content img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px) and (min-width: 481px) {
+    #main-content img{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 721px) {
+    #main-content img{
+        width: 30%;
+    }
+}
